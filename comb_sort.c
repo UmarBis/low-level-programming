@@ -1,14 +1,14 @@
 #include <stdio.h>
 
 #define MAXN 100
-int arr[MAXN]; // массив
+int arr[MAXN]; 
 
 int main(void) {
-    int n;      // количество элементов
-    int i;      // счётчик
-    int gap;    // шаг сравнения
-    int swapped;// флаг перестановки
-    int a, b;   // временные переменные для swap
+    int n;     
+    int i;     
+    int gap;   
+    int swapped;
+    int a, b;   
 
     // === читаем n ===
     scanf("%d", &n);
@@ -18,10 +18,10 @@ int main(void) {
     // === читаем массив ===
     i = 0;
 read_loop:
-    if (i >= n) goto read_done;       // если i >= n ? конец ввода
+    if (i >= n) goto read_done;       
     scanf("%d", &arr[i]);
     i = i + 1;
-    goto read_loop;                   // переход к началу цикла
+    goto read_loop;                   
 read_done:
 
     // === инициализация comb sort ===
